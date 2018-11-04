@@ -5,7 +5,7 @@ html {
 }
 
 #index-bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../img/index-bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../img/index-bg.jpg);
     position: relative;
     height: 100%;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@ html {
     margin-left: auto;
     margin-right: auto;
     
-    background-color: rgba(214,214,214,0.29);
+    background-color: rgba(214,214,214,0.5);
     position: absolute;
     
     border-radius: 10px;
@@ -94,8 +94,11 @@ html {
     color: #777;
 }
 
-.sign-up{
-    text-align: center;
+.login-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
 }
 
 /* Fallback for Edge
