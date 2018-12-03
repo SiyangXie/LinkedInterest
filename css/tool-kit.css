@@ -166,3 +166,48 @@ p{
     align-items:flex-start;
     background: white;
 }
+.post-right{
+    flex:1;
+    overflow: visible;
+    display: block;
+}
+.post-name{
+    display:flex;
+    flex-direction: row;
+}
+
+h6{
+    display: block;
+}
+.post-min{
+    float:right;
+    font-weight: 400;
+    font-size: 80%;
+    margin-left:1rem;
+    display:block;
+}
+
+/*gallery*/
+.gallery-column{
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.gallery-column img{
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+.gallery-column img:hover{
+    border:2px solid #777;
+}
+
+.gallery-row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
