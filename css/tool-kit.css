@@ -230,3 +230,25 @@ h6{
     padding: 20px;
     
 }
+
+/*shopping*/
+.shopping-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    padding:10px 15px;
+    
+}
+.cd-item{
+    border:solid 1px;
+    border-radius: 10px;
+    margin: 5px 5px;
+    padding:5px 5px;
+}
+
+.cd-item img{
+    height: 250px;
+}
+
+.cd-txt{
+    height: 100px;
+}
