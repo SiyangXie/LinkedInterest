@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/tool-kit.css">
 
@@ -15,8 +16,7 @@
 <body>
 
     <!--nav-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light my-nav">
         <!--escape hatch-->
         <a href="home.html"><img src="icon/drawable-mdpi/icon.png" alt="" class="navbar-brand"></a>
 
@@ -67,6 +67,10 @@
         </div>
     </nav>
 
+
+
+
+
     <div class="container all-padding row">
         <!--left col-->
         <div class="col-md-3">
@@ -85,86 +89,319 @@
                     <h2>Leonardo DiCaprio<small>American Actor</small></h2>
                 </div>
             </div>
-
-            <!--about card-->
-            <div class="card profile-card-3 card-style">
-                <div class="card-content">
-                    <h6>About <small>· <a href="#">Edit</a></small></h6>
-                    <ul class="dc axg">
-                        <li><span class="axc h bfa aff"></span>Worked at <a href="#">Appian Way Productions</a>
-                        </li>
-                        <li><span class="axc h bfq aff"></span>Lives in <a href="#">Santa Monica, CA</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
 
+
+
         <!--mid col-->
-        <div class="col-md-6">
+        <div class="col-md-6 contact-sidebar">
             <ul class="ul-home-1">
                 <!--textarea-->
-                <li class="textarea-holder">
-                    <div class="input-group">
-                        <textarea class="form-control" type="text" placeholder="What's up?" rows="3"></textarea>
-                        <button type="button" class="btn btn-primary" id="post-submit">Post</button>
-                    </div>
-                </li>
-                <li class="post-li">
-                    <img src="img/home/profile-pic.jpg" alt="profile-img" class="profile-s">
-                    <div class="post-right">
-                        <div class="post-name">
-                            <h6>Leonardo DiCaprio</h6>
-                            <small class="post-min">4 min</small>
+                <li class="textarea-holder txt-hd">
+                    <div class="card gedf-card">
+                        <div class="card-header">
+                            <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active" id="posts-tab" data-toggle="tab" href="#posts" role="tab" aria-controls="posts" aria-selected="true">Post</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="images-tab" data-toggle="tab" role="tab" aria-controls="images" aria-selected="false" href="#images">Images</a>
+                                </li>
+                            </ul>
                         </div>
+                        <div class="card-body">
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="message">post</label>
+                                        <textarea class="form-control" id="message" rows="3" placeholder="What are you thinking?"></textarea>
+                                    </div>
 
-                        <p>Happy Hanukkah! Over these eight nights, we draw inspiration from light that can overpower any darkness, and recommit ourselves to building a brighter future for our families, our communities, and our world.</p>
-                    </div>
-                </li>
-                <li class="post-li">
-                    <img src="img/home/profile-pic.jpg" alt="profile-img" class="profile-s">
-                    <div class="post-right">
-                        <div class="post-name">
-                            <h6>Leonardo DiCaprio</h6>
-                            <small class="post-min">4 min</small>
+                                </div>
+                                <div class="tab-pane fade" id="images" role="tabpanel" aria-labelledby="images-tab">
+                                    <div class="form-group">
+                                        <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile">
+                                            <label class="custom-file-label" for="customFile">Upload image</label>
+                                        </div>
+                                    </div>
+                                    <div class="py-4"></div>
+                                </div>
+                            </div>
+                            <div class="btn-toolbar justify-content-between">
+                                <div class="btn-group">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                                <div class="btn-group">
+                                    <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-globe"></i> Public
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                        <a class="dropdown-item" href="#"><i class="fa fa-globe"></i> Public</a>
+                                        <a class="dropdown-item" href="#"><i class="fa fa-users"></i> Friends</a>
+                                        <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Just me</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        <p>Happy Hanukkah! Over these eight nights, we draw inspiration from light that can overpower any darkness, and recommit ourselves to building a brighter future for our families, our communities, and our world.</p>
                     </div>
                 </li>
-                <li class="post-li">
-                    <img src="img/home/profile-pic.jpg" alt="profile-img" class="profile-s">
-                    <div class="post-right">
-                        <div class="post-name">
-                            <h6>Leonardo DiCaprio</h6>
-                            <small class="post-min">4 min</small>
+
+                <li class="home-post">
+                    <div class="card gedf-card">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="mr-2">
+                                        <a href="#"><img class="rounded-circle" width="45" src="img/friends/jennifergarner.jpg" alt=""></a>
+                                    </div>
+                                    <div class="ml-2">
+                                        <div class="h5 m-0">Jennifer Garner</div>
+                                        <div class="h7 text-muted">@jennifer1973</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dropdown">
+                                        <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-h"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                                            <a class="dropdown-item" href="#">Favorite</a>
+                                            <a class="dropdown-item" href="#">Hide</a>
+                                            <a class="dropdown-item" href="#">Report</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
+                        <div class="card-body">
+                            <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
 
-                        <p>Happy Hanukkah! Over these eight nights, we draw inspiration from light that can overpower any darkness, and recommit ourselves to building a brighter future for our families, our communities, and our world.</p>
-                    </div>
-                </li>
-                <li class="post-li">
-                    <img src="img/home/profile-pic.jpg" alt="profile-img" class="profile-s">
-                    <div class="post-right">
-                        <div class="post-name">
-                            <h6>Leonardo DiCaprio</h6>
-                            <small class="post-min">4 min</small>
+                            <p class="card-text">
+                                Happy Hanukkah! Over these eight nights, we draw inspiration from light that can overpower any darkness, and recommit ourselves to building a brighter future for our families, our communities, and our world.
+                            </p>
                         </div>
-
-                        <p>Happy Hanukkah! Over these eight nights, we draw inspiration from light that can overpower any darkness, and recommit ourselves to building a brighter future for our families, our communities, and our world.</p>
-                    </div>
-                </li>
-                <li class="post-li">
-                    <img src="img/home/profile-pic.jpg" alt="profile-img" class="profile-s">
-                    <div class="post-right">
-                        <div class="post-name">
-                            <h6>Leonardo DiCaprio</h6>
-                            <small class="post-min">4 min</small>
+                        <div class="card-footer">
+                            <a href="#" class="card-link"><i class="fa fa-thumbs-up"></i> Like</a>
+                            <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                            <a href="#" class="card-link"><i class="fa fa-share"></i> Share</a>
                         </div>
-
-                        <p>Happy Hanukkah! Over these eight nights, we draw inspiration from light that can overpower any darkness, and recommit ourselves to building a brighter future for our families, our communities, and our world.</p>
                     </div>
                 </li>
+                
+                <li class="home-post">
+                    <div class="card gedf-card">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="mr-2">
+                                        <a href="#"><img class="rounded-circle" width="45" src="img/friends/galgadot.jpg" alt=""></a>
+                                    </div>
+                                    <div class="ml-2">
+                                        <div class="h5 m-0">Gal Gadot</div>
+                                        <div class="h7 text-muted">@galgadot23</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dropdown">
+                                        <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-h"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                                            <a class="dropdown-item" href="#">Favorite</a>
+                                            <a class="dropdown-item" href="#">Hide</a>
+                                            <a class="dropdown-item" href="#">Report</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-body">
+                            <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>45 min ago</div>
+
+                            <p class="card-text">
+                                UT Athletics is hosting a public inventory sale Dec. 12, on the Robert E. White Indoor Field inside the Neyland-Thompson Sports Center from 5-8 p.m. ET and will feature jerseys, cleats, shoes, helmets and other gear and apparel from various UT sport programs.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="card-link"><i class="fa fa-thumbs-up"></i> Like</a>
+                            <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                            <a href="#" class="card-link"><i class="fa fa-share"></i> Share</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="home-post">
+                    <div class="card gedf-card">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="mr-2">
+                                        <a href="#"><img class="rounded-circle" width="45" src="img/friends/chrispratt.jpg" alt=""></a>
+                                    </div>
+                                    <div class="ml-2">
+                                        <div class="h5 m-0">Chris Pratt</div>
+                                        <div class="h7 text-muted">@chrispt</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dropdown">
+                                        <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-h"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                                            <a class="dropdown-item" href="#">Favorite</a>
+                                            <a class="dropdown-item" href="#">Hide</a>
+                                            <a class="dropdown-item" href="#">Report</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-body">
+                            <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>3 hours ago</div>
+
+                            <p class="card-text">
+                                Happy 4th to all our American friends celebrating today. Stay safe &amp; enjoy your day.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="card-link"><i class="fa fa-thumbs-up"></i> Like</a>
+                            <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                            <a href="#" class="card-link"><i class="fa fa-share"></i> Share</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="home-post">
+                    <div class="card gedf-card">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="mr-2">
+                                        <a href="#"><img class="rounded-circle" width="45" src="img/friends/jennifergarner.jpg" alt=""></a>
+                                    </div>
+                                    <div class="ml-2">
+                                        <div class="h5 m-0">Jennifer Garner</div>
+                                        <div class="h7 text-muted">@jennifer1973</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dropdown">
+                                        <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-h"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                                            <a class="dropdown-item" href="#">Favorite</a>
+                                            <a class="dropdown-item" href="#">Hide</a>
+                                            <a class="dropdown-item" href="#">Report</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-body">
+                            <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
+
+                            <p class="card-text">
+                                Happy Hanukkah! Over these eight nights, we draw inspiration from light that can overpower any darkness, and recommit ourselves to building a brighter future for our families, our communities, and our world.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="card-link"><i class="fa fa-thumbs-up"></i> Like</a>
+                            <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                            <a href="#" class="card-link"><i class="fa fa-share"></i> Share</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="home-post">
+                    <div class="card gedf-card">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="mr-2">
+                                        <a href="#"><img class="rounded-circle" width="45" src="img/friends/jennifergarner.jpg" alt=""></a>
+                                    </div>
+                                    <div class="ml-2">
+                                        <div class="h5 m-0">Jennifer Garner</div>
+                                        <div class="h7 text-muted">@jennifer1973</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dropdown">
+                                        <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-h"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                                            <a class="dropdown-item" href="#">Favorite</a>
+                                            <a class="dropdown-item" href="#">Hide</a>
+                                            <a class="dropdown-item" href="#">Report</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-body">
+                            <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
+
+                            <p class="card-text">
+                                Happy Hanukkah! Over these eight nights, we draw inspiration from light that can overpower any darkness, and recommit ourselves to building a brighter future for our families, our communities, and our world.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="card-link"><i class="fa fa-thumbs-up"></i> Like</a>
+                            <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                            <a href="#" class="card-link"><i class="fa fa-share"></i> Share</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="home-post">
+                    <div class="card gedf-card">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="mr-2">
+                                        <a href="#"><img class="rounded-circle" width="45" src="img/friends/jennifergarner.jpg" alt=""></a>
+                                    </div>
+                                    <div class="ml-2">
+                                        <div class="h5 m-0">Jennifer Garner</div>
+                                        <div class="h7 text-muted">@jennifer1973</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dropdown">
+                                        <button class="btn btn-link dropdown-toggle" type="button" id="gedf-drop1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa fa-ellipsis-h"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="gedf-drop1">
+                                            <a class="dropdown-item" href="#">Favorite</a>
+                                            <a class="dropdown-item" href="#">Hide</a>
+                                            <a class="dropdown-item" href="#">Report</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-body">
+                            <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
+
+                            <p class="card-text">
+                                Happy Hanukkah! Over these eight nights, we draw inspiration from light that can overpower any darkness, and recommit ourselves to building a brighter future for our families, our communities, and our world.
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="card-link"><i class="fa fa-thumbs-up"></i> Like</a>
+                            <a href="#" class="card-link"><i class="fa fa-comment"></i> Comment</a>
+                            <a href="#" class="card-link"><i class="fa fa-share"></i> Share</a>
+                        </div>
+                    </div>
+                </li>
+                
 
 
 
@@ -173,72 +410,305 @@
         </div>
 
         <!--right col-->
-        <div class="col-md-3">
-            <div>
-                <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
-                <a class="rj" href="profile/index.html">Visit your profile!</a> Check your self, you aren't looking well.
-            </div>
+        <div class="col-sm-3 offset-fixed f-right">
+            <div class="side-right">
+                <div class="h7">Contacts</div>
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/roberdowneyjr.jpg" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Robert Downey Jr
+                        </div>
+                    </div>
+                    <div class="state"></div>
+                </div>
+                <!-- /////////-->
 
-            <div class="pz afo d-none vy">
-                <div class="qa">
-                    <h6 class="afh">Sponsored</h6>
-                    <div data-grid="images" data-target-height="150"><img class="bos" data-width="640" data-height="640" data-action="zoom" src="assets/img/instagram_2.jpg" style="width: 0px; height: 0px; margin-bottom: 10px; margin-right: 0px; display: inline-block; vertical-align: bottom;"></div>
-                    <p><strong>It might be time to visit Iceland.</strong> Iceland is so chill, and everything looks cool here. Also, we heard the people are pretty nice. What are you waiting for?</p>
-                    <button class="cg nz ok">Buy a ticket</button>
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/chrispratt.jpg" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Chris Pratt
+                        </div>
+                    </div>
+                    <div class="state"></div>
                 </div>
-            </div>
+                <!-- /////////-->
 
-            <div class="col-md-6">
-                <div class="qa">
-                    <h6 class="afh">Likes <small>· <a href="#">View All</a></small></h6>
-                    <ul class="bow box">
-                        <li class="rv afa">
-                            <img class="bos vb yb aff" src="assets/img/avatar-fat.jpg">
-                            <div class="rw">
-                                <strong>Jacob Thornton</strong> @fat
-                                <div class="bpa">
-                                    <button class="cg nz ok">
-                                        <span class="h ayi"></span> Follow</button>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="rv">
-                            <a class="bpu" href="#">
-                                <img class="bos vb yb aff" src="assets/img/avatar-mdo.png">
-                            </a>
-                            <div class="rw">
-                                <strong>Mark Otto</strong> @mdo
-                                <div class="bpa">
-                                    <button class="cg nz ok">
-                                        <span class="h ayi"></span> Follow</button>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/galgadot.jpg" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Gal Gadot
+                        </div>
+                    </div>
+                    <div class="state"></div>
                 </div>
-                <div class="qg">
-                    Dave really likes these nerds, no one knows why though.
-                </div>
-            </div>
+                <!-- /////////-->
 
-            <div class="pz bpm">
-                <div class="qa">
-                    © 2018 Bootstrap
-                    <a href="#">About</a>
-                    <a href="#">Help</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Privacy</a>
-                    <a href="#">Cookies</a>
-                    <a href="#">Ads </a>
-                    <a href="#">Info</a>
-                    <a href="#">Brand</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Status</a>
-                    <a href="#">Apps</a>
-                    <a href="#">Jobs</a>
-                    <a href="#">Advertise</a>
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/jennifergarner.jpg" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Jennifer Garner
+                        </div>
+                    </div>
+                    <div class="h7 text-muted">10 h</div>
                 </div>
+                <!-- /////////-->
+
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/jessicaalba.jpg" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Jessica Alba
+                        </div>
+                    </div>
+                    <div class="h7 text-muted">11 h</div>
+                </div>
+                <!-- /////////-->
+
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/benedictcumberbatch.png" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Benedict Cumber...
+                        </div>
+                    </div>
+                    <div class="state"></div>
+                </div>
+                <!-- /////////-->
+
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/margotrobbie.jpg" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Margot Robbie
+                        </div>
+                    </div>
+                    <div class="state"></div>
+                </div>
+                <!-- /////////-->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/roberdowneyjr.jpg" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Robert Downey Jr
+                        </div>
+                    </div>
+                    <div class="state"></div>
+                </div>
+                <!-- /////////-->
+
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/chrispratt.jpg" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Chris Pratt
+                        </div>
+                    </div>
+                    <div class="state"></div>
+                </div>
+                <!-- /////////-->
+
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/galgadot.jpg" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Gal Gadot
+                        </div>
+                    </div>
+                    <div class="state"></div>
+                </div>
+                <!-- /////////-->
+
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/jennifergarner.jpg" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Jennifer Garner
+                        </div>
+                    </div>
+                    <div class="h7 text-muted">10 h</div>
+                </div>
+                <!-- /////////-->
+
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/jessicaalba.jpg" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Jessica Alba
+                        </div>
+                    </div>
+                    <div class="h7 text-muted">11 h</div>
+                </div>
+                <!-- /////////-->
+
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/benedictcumberbatch.png" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Benedict Cumber...
+                        </div>
+                    </div>
+                    <div class="state"></div>
+                </div>
+                <!-- /////////-->
+
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/margotrobbie.jpg" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Margot Robbie
+                        </div>
+                    </div>
+                    <div class="state"></div>
+                </div>
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/roberdowneyjr.jpg" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Robert Downey Jr
+                        </div>
+                    </div>
+                    <div class="state"></div>
+                </div>
+                <!-- /////////-->
+
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/chrispratt.jpg" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Chris Pratt
+                        </div>
+                    </div>
+                    <div class="state"></div>
+                </div>
+                <!-- /////////-->
+
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/galgadot.jpg" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Gal Gadot
+                        </div>
+                    </div>
+                    <div class="state"></div>
+                </div>
+                <!-- /////////-->
+
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/jennifergarner.jpg" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Jennifer Garner
+                        </div>
+                    </div>
+                    <div class="h7 text-muted">10 h</div>
+                </div>
+                <!-- /////////-->
+
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/jessicaalba.jpg" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Jessica Alba
+                        </div>
+                    </div>
+                    <div class="h7 text-muted">11 h</div>
+                </div>
+                <!-- /////////-->
+
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/benedictcumberbatch.png" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Benedict Cumber...
+                        </div>
+                    </div>
+                    <div class="state"></div>
+                </div>
+                <!-- /////////-->
+
+                <!-- ////// -->
+                <div class="d-flex justify-content-between align-items-center friend-state">
+                    <div class="d-flex">
+                        <div>
+                            <img class="rounded-circle" src="img/friends/margotrobbie.jpg" width="30" alt="">
+                        </div>
+                        <div class="ml-2 h7">
+                            Margot Robbie
+                        </div>
+                    </div>
+                    <div class="state"></div>
+                </div>
+
+
             </div>
+            <form action="#">
+                <div class="form-group mt-2">
+                    <label class="sr-only" for="wzer"></label>
+                    <input type="search" class="form-control" name="wzer" id="wzer" placeholder="Search">
+                </div>
+            </form>
         </div>
     </div>
 

@@ -5,6 +5,10 @@ body {
     background-color: blanchedalmond;
 }
 
+.my-nav{
+    z-index: 1;
+}
+
 .all-padding {
     padding-top: 1.5rem !important;
     padding-bottom: 3rem !important;
@@ -124,91 +128,104 @@ body {
     text-decoration: none;
 }
 
-.text-holder{
-    display:flex;
-    margin-top:0;
+.text-holder {
+    display: flex;
+    margin-top: 0;
     overflow: visible;
-    padding:1.5rem !important;
-    position:relative;
+    padding: 1.5rem !important;
+    position: relative;
     margin-bottom: -1px;
-    border:1px solid #F8F8F8;
-    -webkit-box-align:start;
+    border: 1px solid #F8F8F8;
+    -webkit-box-align: start;
     align-items: flex-start;
 }
 
-.text-holder:first-child{
+.text-holder:first-child {
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
 }
 
-.ul-home-1{
+.ul-home-1 {
     list-style: none;
 }
 
-.profile-s{
+.txt-hd {
+    margin-bottom: 1.5rem;
+}
+
+.home-post {
+    margin-bottom: 0.75rem;
+}
+
+.profile-s {
     border-radius: 100%;
     width: 50px;
     margin-right: 1rem;
 }
-.profile-m{
+
+.profile-m {
     border-radius: 100%;
-    width:75px;
+    width: 75px;
     margin: 1rem 1rem;
 }
-p{
+
+p {
     margin-top: 0;
     margin-bottom: 1rem;
 }
 
-.post-li{
+.post-li {
     display: flex;
     margin-top: 0;
-    padding:1.5rem !important;
+    padding: 1.5rem !important;
     position: relative;
     margin-bottom: -1px;
-    border:1px solid rgba(0,0,0,0.125);
-    align-items:flex-start;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    align-items: flex-start;
     background: white;
 }
-.post-right{
-    flex:1;
+
+.post-right {
+    flex: 1;
     overflow: visible;
     display: block;
 }
-.post-name{
-    display:flex;
+
+.post-name {
+    display: flex;
     flex-direction: row;
 }
 
-h6{
+h6 {
     display: block;
 }
-.post-min{
-    float:right;
+
+.post-min {
+    float: right;
     font-weight: 400;
     font-size: 80%;
-    margin-left:1rem;
-    display:block;
+    margin-left: 1rem;
+    display: block;
 }
 
 /*gallery*/
-.gallery-column{
+.gallery-column {
     -ms-flex: 25%;
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
 }
 
-.gallery-column img{
+.gallery-column img {
     margin-top: 8px;
     vertical-align: middle;
 }
 
-.gallery-column img:hover{
-    border:2px solid #777;
+.gallery-column img:hover {
+    border: 2px solid #777;
 }
 
-.gallery-row{
+.gallery-row {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
@@ -217,72 +234,187 @@ h6{
 }
 
 /*events*/
-.events-container{
+.events-container {
     position: relative;
     max-width: 800px;
     margin: 20px auto;
     border-radius: 50px
 }
 
-.events-container .events-content{
+.events-container .events-content {
     position: absolute;
     bottom: 0;
-    background: rgb(0,0,0);
-    background: rgba(0,0,0,0.5);
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     width: 100%;
     padding: 20px;
-    
+
 }
 
 /*shopping*/
-.shopping-gallery{
+.shopping-gallery {
     display: flex;
     flex-wrap: wrap;
-    padding:10px 15px;
-    
-}
-.cd-item{
-    border:solid 1px;
-    border-radius: 10px;
-    margin: 5px 5px;
-    padding:5px 5px;
+    padding: 10px 15px;
+
 }
 
-.cd-item img{
+.cd-item {
+    border: solid 1px;
+    border-radius: 10px;
+    margin: 5px 5px;
+    padding: 5px 5px;
+}
+
+.cd-item img {
     height: 250px;
 }
 
-.cd-txt{
+.cd-txt {
     height: 100px;
 }
 
 /*friends*/
-.friends-page-content{
+.friends-page-content {
     margin-top: 50px;
 }
 
-.friends-row{
+.friends-row {
     margin-top: 25px;
     flex-wrap: wrap;
 }
 
-.friends-info{
-    margin:1rem 1rem;
+.friends-info {
+    margin: 1rem 1rem;
 }
 
-.photos-friends{
+.photos-friends {
     display: inline-flex;
     flex-direction: row;
 }
-.photo-num{
+
+.photo-num {
     display: block;
-    
+
 }
-.friend-num{
+
+.friend-num {
     display: block;
     margin-left: 1rem;
 }
-.friends-bck{
+
+.friends-bck {
     margin-top: 1rem;
+}
+
+/*home*/
+.about-card-ul li {
+    list-style: none;
+}
+
+.post-dd {
+    display: block;
+    float: right;
+    margin-right: 1rem;
+}
+
+/*home migration*/
+.bg-fbook {
+    background-color: #4267b2 !important;
+    padding: .1rem 1rem;
+}
+
+.btn-fbook {
+    color: #4a4a4a;
+    background-color: #ffffff;
+    border-color: transparent;
+    font-weight: 700;
+    transition: all .5s;
+}
+
+.btn-fbook:hover {
+    background-color: #f0f0f0;
+    border-color: transparent;
+}
+
+.btn-fposts {
+    background-color: #f0f0f0;
+    border-color: transparent;
+    border-radius: 5rem;
+    transition: all 0.5s;
+}
+
+.btn-fposts:hover {
+    background-color: rgba(0, 0, 0, .05);
+    border-color: transparent;
+}
+
+.h7 {
+    font-size: 0.87rem;
+    font-weight: 600;
+}
+
+.h8 {
+    font-size: 0.78rem;
+    font-weight: 600;
+}
+
+.offset-fixed {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.f-left {
+    left: 0
+}
+
+.f-right {
+    right: 0;
+    
+}
+
+.side-left {
+    margin-top: 4rem;
+    margin-left: 8.07rem
+}
+
+.side-right {
+    margin-top: 4rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: calc(100vh - 7.5rem);
+}
+
+.img-circle {
+    width: 5rem;
+    height: 3.1rem;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+}
+
+.state {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: green;
+    border-radius: 50%
+}
+
+.friend-state {
+    padding: 0.57rem 0.3rem;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.friend-state:hover {
+    background-color: #f7f7f7;
+}
+
+@media only screen and (max-width:300px){
+    .contact-sidebar{
+        visibility: hidden;
+        display: none;
+    }
 }
