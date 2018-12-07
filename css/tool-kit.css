@@ -493,3 +493,8 @@ h6 {
 .account-card{
     margin-bottom: 1rem;
 }
+
+.edit-word:hover{
+    text-decoration: underline;
+    color:#3967b2 !important;
+}
