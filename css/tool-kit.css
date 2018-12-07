@@ -31,6 +31,40 @@ body {
     height: 368px;
     border: none;
 }
+.profile-card-4{
+    font-family: 'Open Sans', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    
+    height: auto;
+    border: none;
+}
+
+.profile-card-5{
+    font-family: 'Open Sans', Arial, sans-serif;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 100%;   
+    height: auto;
+    border: none;
+}
+.profile-card-4-container,.profile-card-5-containter{
+    margin:1.2rem 1.3rem;
+}
+
+.home-card-about-item{
+    margin-top: 0.3rem;
+    margin-left: 0;
+    padding-left: 0;
+    text-align: left !important;
+}
+
+.home-card-about-item *{
+    margin-bottom: 0.1rem;
+}
 
 .profile-card-3 .background-block {
     float: left;
@@ -128,6 +162,10 @@ body {
     text-decoration: none;
 }
 
+
+.home-card-gallery-item *{
+    margin-top: 0.2rem;
+}
 .text-holder {
     display: flex;
     margin-top: 0;
@@ -194,6 +232,15 @@ p {
 .post-name {
     display: flex;
     flex-direction: row;
+}
+
+.post-img-l{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width:350px;
 }
 
 h6 {
@@ -426,9 +473,8 @@ h6 {
     background-color: #f7f7f7;
 }
 
-@media only screen and (max-width:300px){
+@media only screen and (max-width:800px){
     .contact-sidebar{
-        visibility: hidden;
         display: none;
     }
 }

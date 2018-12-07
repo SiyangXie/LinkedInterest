@@ -12,31 +12,24 @@
 </head>
 
 <body id="index-bg">
-    <form class="form-signin">
 
-        <img class="mb-4 login-logo" src="icon/drawable-xxxhdpi/icon.png" alt="logo" width="72" height="72">
 
-        <div class="form-label-group">
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-            <label for="inputEmail">Email address</label>
-        </div>
-
-        <div class="form-label-group">
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-            <label for="inputPassword">Password</label>
-        </div>
-
-        <div class="checkbox mb-3">
-            <label>
-                <input type="checkbox" value="remember-me"> Remember me
-            </label>
+    <form class="form-signup">
+        <div class="form-group">
+            <h2>Sign Up</h2>
+            <label for="exampleFirstName">First Name</label>
+            <input type="firstName" class="form-control" id="exampleFirstName" aria-describedby="" placeholder="Peter">
+            <label for="exampleLastName">Last Name</label>
+            <input type="lastName" class="form-control" id="exampleLastName" aria-describedby="" placeholder="Parker">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="peterparker@gmail.com">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+            <label for="exampleInputPassword2">Password Confirm</label>
+            <input type="password-confirm" class="form-control" id="exampleInputPassword1" placeholder="********">
         </div>
         
-        <!--if needs check-up, change it to button-->
-        <a href="home.html" class="btn btn-md btn-primary btn-block">Log in</a>
-        <a href="signup.html" class="btn btn-md btn-secondary btn-block">Sign up</a>
-        
-        <p class="mt-5 mb-2 text-dark text-center small">Copyright &copy; 2018 LinkedInterest Inc.</p>
+        <a href="home.html" class="btn btn-primary btn-block">Submit</a>
     </form>
 
     <!--bootstrap-->

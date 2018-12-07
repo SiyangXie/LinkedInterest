@@ -34,7 +34,23 @@ html {
     
     border-radius: 10px;
 }
-
+.form-signup {
+    display: block;
+    
+    width: 30%;
+    padding: 15px;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-color: rgba(214,214,214,0.5);
+    position: absolute;
+    
+    border-radius: 10px;
+}
+.form-signup .form-group input{
+    margin-bottom: 1rem;
+}
 .form-label-group {
     position: relative;
     margin-bottom: 1rem;
