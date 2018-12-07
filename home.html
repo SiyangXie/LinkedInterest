@@ -120,13 +120,13 @@
                     </div>
 
                     <div class="home-card-gallery-item">
-                        <img data-width="640" data-height="640" data-action="zoom" src="img/gallery/falls2.jpg" style="width: 100px; height: 100px;">
-                        
-                        <img data-width="640" data-height="640" data-action="zoom" src="img/gallery/mountainskies.jpg" style="width: 100px; height: 100px;">
-                        
-                        <img data-width="640" data-height="640" data-action="zoom" src="img/gallery/nature.jpg" style="width: 100px; height: 100px;">
-                        
-                        <img data-width="640" data-height="640" data-action="zoom" src="img/gallery/ocean.jpg" style="width: 100px; height: 100px;">
+                        <img data-width="640" data-height="640" data-action="zoom" src="img/gallery/falls2.jpg" class="enlarge" style="width: 100px; height: 100px;">
+
+                        <img data-width="640" data-height="640" data-action="zoom" src="img/gallery/mountainskies.jpg" class="enlarge" style="width: 100px; height: 100px;">
+
+                        <img data-width="640" data-height="640" data-action="zoom" src="img/gallery/nature.jpg" class="enlarge" style="width: 100px; height: 100px;">
+
+                        <img data-width="640" data-height="640" data-action="zoom" src="img/gallery/ocean.jpg" class="enlarge" style="width: 100px; height: 100px;">
                     </div>
 
                 </div>
@@ -355,9 +355,9 @@
                             <p class="card-text">
                                 Burglars in medieval Cairo would sometimes send a turtle with a lit candle on its shell into the house they were planning to rob. If someone was home, they'd cry out in amazement when they saw the turtle, scaring off the burglars. Otherwise, the robbery could go ahead.
                             </p>
-                            
-                            <img src="img/post-turtle.jpg" alt="post-turtle" class="post-img-l">
-                            
+
+                            <img src="img/post-turtle.jpg" alt="post-turtle" class="post-img-l enlarge">
+
                         </div>
                         <div class="card-footer">
                             <a href="#" class="card-link"><i class="fa fa-thumbs-up"></i> Like</a>
@@ -761,11 +761,28 @@
         </div>
     </div>
 
+    <!--other functions-->
+    <!--modal-->
+    <div class="modal fade" id="enlargeImageModal" tabindex="-1" role="dialog" aria-labelledby="enlargeImageModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <img src="" class="enlargeImageModalSource" style="width: 100%;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
     <!--bootstrap-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <!--other js-->
+    <script src="js/pic.js"></script>
 </body>
 
 </html>

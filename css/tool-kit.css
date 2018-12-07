@@ -22,6 +22,7 @@ body {
 }
 
 .profile-card-3 {
+    z-index: 1;
     font-family: 'Open Sans', Arial, sans-serif;
     position: relative;
     float: left;
@@ -268,9 +269,7 @@ h6 {
     vertical-align: middle;
 }
 
-.gallery-column img:hover {
-    border: 2px solid #777;
-}
+
 
 .gallery-row {
     display: -ms-flexbox;
@@ -478,3 +477,11 @@ h6 {
         display: none;
     }
 }
+
+/*img*/
+.enlarge:hover{
+    opacity: 0.7;
+    cursor: zoom-in;
+}
+
+
