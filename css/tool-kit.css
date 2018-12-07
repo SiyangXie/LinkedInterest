@@ -16,6 +16,11 @@ body {
     padding-right: 15px;
 }
 
+.all-padding-s{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
 .card-style {
     margin-bottom: 1.5rem !important;
     background: #F8F8F8;
@@ -164,7 +169,7 @@ body {
 }
 
 
-.home-card-gallery-item *{
+.home-card-gallery-item *,.post-pic-group *{
     margin-top: 0.2rem;
 }
 .text-holder {
@@ -484,4 +489,7 @@ h6 {
     cursor: zoom-in;
 }
 
-
+/*account setting*/
+.account-card{
+    margin-bottom: 1rem;
+}

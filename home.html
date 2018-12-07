@@ -8,6 +8,9 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+    <!--ekko-->
+    
 
     <link rel="stylesheet" href="css/tool-kit.css">
 
@@ -49,7 +52,7 @@
                         Settings
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Account</a>
+                        <a class="dropdown-item" href="account/account.html">Account</a>
                         <a class="dropdown-item" href="#">Payments</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="about.html">About us</a>
@@ -91,7 +94,7 @@
             <div class="card profile-card-4 card-style">
                 <div class="profile-card-4-container">
 
-                    <div class="home-card-about"><strong>About&nbsp;</strong><small>·&nbsp;<a href="#">edit</a></small></div>
+                    <div class="home-card-about"><strong>About&nbsp;</strong><small>·&nbsp;<a href="account/profile.html">edit</a></small></div>
 
                     <div class="home-card-about-item col">
                         <div>
@@ -153,8 +156,14 @@
                                 <li class="nav-item">
                                     <a class="nav-link" id="images-tab" data-toggle="tab" role="tab" aria-controls="images" aria-selected="false" href="#images">Images</a>
                                 </li>
+                                
+                                <li class="nav-item">
+                                    <a class="nav-link" id="videos-tab" data-toggle="tab" role="tab" aria-controls="videos" aria-selected="false" href="#videos">Videos</a>
+                                </li>
                             </ul>
                         </div>
+                        
+                        
                         <div class="card-body">
                             <div class="tab-content" id="myTabContent">
                                 <div class="tab-pane fade show active" id="posts" role="tabpanel" aria-labelledby="posts-tab">
@@ -173,7 +182,18 @@
                                     </div>
                                     <div class="py-4"></div>
                                 </div>
+                                
+                                <div class="tab-pane fade" id="videos" role="tabpanel" aria-labelledby="videos-tab">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Video URL">
+                                        
+                                    </div>
+                                    <div class="py-4"></div>
+                                </div>
                             </div>
+                            
+                            
+                            
                             <div class="btn-toolbar justify-content-between">
                                 <div class="btn-group">
                                     <button type="submit" class="btn btn-primary">Submit</button>
@@ -372,11 +392,11 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="mr-2">
-                                        <a href="#"><img class="rounded-circle" width="45" src="img/friends/jennifergarner.jpg" alt=""></a>
+                                        <a href="#"><img class="rounded-circle" width="45" src="img/friends/margotrobbie.jpg" alt=""></a>
                                     </div>
                                     <div class="ml-2">
-                                        <div class="h5 m-0">Jennifer Garner</div>
-                                        <div class="h7 text-muted">@jennifer1973</div>
+                                        <div class="h5 m-0">Margot Robbie</div>
+                                        <div class="h7 text-muted">@mrabbit5</div>
                                     </div>
                                 </div>
                                 <div>
@@ -395,11 +415,22 @@
 
                         </div>
                         <div class="card-body">
-                            <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>10 min ago</div>
+                            <div class="text-muted h7 mb-2"> <i class="fa fa-clock-o"></i>2 days ago</div>
 
                             <p class="card-text">
-                                Happy Hanukkah! Over these eight nights, we draw inspiration from light that can overpower any darkness, and recommit ourselves to building a brighter future for our families, our communities, and our world.
+                                Reflection🌄<br>
+                                📸December 2018!
                             </p>
+                            <div class="post-pic-group">
+                                <img data-width="640" data-height="640" data-action="zoom" src="img/nature1.jpg" class="enlarge" style="width: 140px; height: 140px;">
+                                <img data-width="640" data-height="640" data-action="zoom" src="img/nature2.jpg" class="enlarge" style="width: 140px; height: 140px;">
+                                <img data-width="640" data-height="640" data-action="zoom" src="img/nature3.jpg" class="enlarge" style="width: 140px; height: 140px;">
+                                <img data-width="640" data-height="640" data-action="zoom" src="img/nature4.jpg" class="enlarge" style="width: 140px; height: 140px;">
+                                <img data-width="640" data-height="640" data-action="zoom" src="img/nature5.jpg" class="enlarge" style="width: 140px; height: 140px;">
+                                <img data-width="640" data-height="640" data-action="zoom" src="img/nature6.jpg" class="enlarge" style="width: 140px; height: 140px;">
+                                
+                            </div>
+                            
                         </div>
                         <div class="card-footer">
                             <a href="#" class="card-link"><i class="fa fa-thumbs-up"></i> Like</a>
@@ -780,6 +811,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!--ekko-->
 
     <!--other js-->
     <script src="js/pic.js"></script>
