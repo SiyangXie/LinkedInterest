@@ -289,12 +289,14 @@ h6 {
     margin: 1rem 1rem;
 }
 
-.photos-friends {
+
+
+.photos-friends,.tag-blck{
     display: inline-flex;
     flex-direction: row;
 }
 
-.photo-num {
+.photo-num,.rcmd-tag {
     display: block;
 
 }
@@ -304,8 +306,20 @@ h6 {
     margin-left: 1rem;
 }
 
+.friends-heading{
+    margin-top: 2rem;
+    margin-bottom: 0.3rem;
+}
 .friends-bck {
-    margin-top: 1rem;
+    margin-bottom:1rem;
+}
+
+.friends-rcmd-bck{
+    margin-top:0.3rem;
+}
+
+.btn-custom{
+    width:175px !important;
 }
 
 /*home*/
