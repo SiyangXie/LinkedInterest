@@ -249,6 +249,15 @@ p {
     width:350px;
 }
 
+.no-decoration:hover, .no-decoration{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
 h6 {
     display: block;
 }
