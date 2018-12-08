@@ -5,7 +5,7 @@ body {
     background-color: blanchedalmond;
 }
 
-.my-nav{
+.my-nav {
     z-index: 1;
 }
 
@@ -16,7 +16,7 @@ body {
     padding-right: 15px;
 }
 
-.all-padding-s{
+.all-padding-s {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
@@ -37,38 +37,41 @@ body {
     height: 368px;
     border: none;
 }
-.profile-card-4{
+
+.profile-card-4 {
     font-family: 'Open Sans', Arial, sans-serif;
     position: relative;
     float: left;
     overflow: hidden;
     width: 100%;
-    
+
     height: auto;
     border: none;
 }
 
-.profile-card-5{
+.profile-card-5 {
     font-family: 'Open Sans', Arial, sans-serif;
     position: relative;
     float: left;
     overflow: hidden;
-    width: 100%;   
+    width: 100%;
     height: auto;
     border: none;
 }
-.profile-card-4-container,.profile-card-5-containter{
-    margin:1.2rem 1.3rem;
+
+.profile-card-4-container,
+.profile-card-5-containter {
+    margin: 1.2rem 1.3rem;
 }
 
-.home-card-about-item{
+.home-card-about-item {
     margin-top: 0.3rem;
     margin-left: 0;
     padding-left: 0;
     text-align: left !important;
 }
 
-.home-card-about-item *{
+.home-card-about-item * {
     margin-bottom: 0.1rem;
 }
 
@@ -169,9 +172,11 @@ body {
 }
 
 
-.home-card-gallery-item *,.post-pic-group *{
+.home-card-gallery-item *,
+.post-pic-group * {
     margin-top: 0.2rem;
 }
+
 .text-holder {
     display: flex;
     margin-top: 0;
@@ -240,16 +245,17 @@ p {
     flex-direction: row;
 }
 
-.post-img-l{
+.post-img-l {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5px;
     margin-bottom: 5px;
-    width:350px;
+    width: 350px;
 }
 
-.no-decoration:hover, .no-decoration{
+.no-decoration:hover,
+.no-decoration {
     text-decoration: none;
     color: black;
 }
@@ -351,12 +357,14 @@ h6 {
 
 
 
-.photos-friends,.tag-blck{
+.photos-friends,
+.tag-blck {
     display: inline-flex;
     flex-direction: row;
 }
 
-.photo-num,.rcmd-tag {
+.photo-num,
+.rcmd-tag {
     display: block;
 
 }
@@ -366,20 +374,21 @@ h6 {
     margin-left: 1rem;
 }
 
-.friends-heading{
+.friends-heading {
     margin-top: 2rem;
     margin-bottom: 0.3rem;
 }
+
 .friends-bck {
-    margin-bottom:1rem;
+    margin-bottom: 1rem;
 }
 
-.friends-rcmd-bck{
-    margin-top:0.3rem;
+.friends-rcmd-bck {
+    margin-top: 0.3rem;
 }
 
-.btn-custom{
-    width:175px !important;
+.btn-custom {
+    width: 175px !important;
 }
 
 /*home*/
@@ -446,7 +455,7 @@ h6 {
 
 .f-right {
     right: 0;
-    
+
 }
 
 .side-left {
@@ -486,24 +495,50 @@ h6 {
     background-color: #f7f7f7;
 }
 
-@media only screen and (max-width:800px){
-    .contact-sidebar{
+@media only screen and (max-width:800px) {
+    .contact-sidebar {
         display: none;
     }
 }
 
 /*img*/
-.enlarge:hover{
+.enlarge:hover {
     opacity: 0.7;
     cursor: zoom-in;
 }
 
 /*account setting*/
-.account-card{
+.account-card {
     margin-bottom: 1rem;
 }
 
-.edit-word:hover{
+.edit-word:hover {
     text-decoration: underline;
-    color:#3967b2 !important;
+    color: #3967b2 !important;
 }
+
+/*events-folder*/
+.events-date-wrapper {
+    display: block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+
+.events-date-month {
+    font-weight: bold;
+    font-size: 150%;
+}
+
+.events-date-date {
+    font-size: 150%;
+}
+
+.events-title-wrapper {
+    display: block;
+    height: 100px;
+    text-align: left;
+}
+
+/*map*/
+
